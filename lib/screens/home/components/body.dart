@@ -10,7 +10,7 @@ class Body extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          HeaderWithSearchBox(size, context),
+          HeaderWithSearchBox(size: size,),
           TitleWithMoreButton(
             title: "Recommended",
             press: () {},
