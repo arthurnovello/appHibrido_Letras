@@ -1,4 +1,6 @@
+import 'package:appHibrido_Letras/constants.dart';
 import 'package:appHibrido_Letras/screens/details/components/body.dart';
+import 'package:appHibrido_Letras/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -8,6 +10,13 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+        },
+        child: Icon(Icons.search),
+        backgroundColor: kPrimaryColor,
+      ),
     );
   }
 
